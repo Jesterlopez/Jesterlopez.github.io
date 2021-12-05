@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JestDev</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+  <header>
+      <h2 class="title-home">
+        <a href="#home">JestDev</a>
+        <button class="toggle__menu" id="toggle__menu">
+          <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">
+            <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="3" d="M50 25L0 25M50 10L0 10M0 40L50 40"/>
+          </svg>
+        </button>
+      </h2>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#about-me">About Me</a></li>
+        <li class="menu__item"><a href="#projects">Projects</a></li>
+        <li class="menu__item"><a href="#skills">Skills</a></li>
+        <li class="menu__item"><a href="#contact">Contact</a></li>
+        <li class="menu__item toggle">
+          <button class="toggle__dark-mode">
+            <img src="./images/icons/day.gif" alt="">
+          </button>
+        </li>
+      </ul>
+  </header>
+  <main>
+    <section class="container__home section" data-name="Home" id="home">
+      <div class="column__left">
+       <h1 class="hero__title">Hi! Here you will know me a little better</h1>
+          <p class="content__welcome">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vitae excepturi odit et, aperiam ex culpa deserunt ipsum soluta dolore?</p>
+          <div class="buttons__home">
+            <a class="button" href="#">Contact</a>
+            <a class="button" href="#">CV</a>
+          </div>
+      </div>
+      <div class="column__right">
+        <img class="image__home" src="./images/casual.png" alt="">
+        <div class="circle__background"></div>
+      </div>
+    </section>
+
+    <section class="container__about section" data-name="About Me" id="about-me">
+      <div class="about__content">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Magnam iure similique ratione dolorum odit illo blanditiis! 
+          Repellat ullam nisi, sint amet assumenda quibusdam numquam ipsam 
+          cum totam nostrum doloremque illum voluptatem nihil omnis dolorum 
+          architecto animi ab temporibus nulla officia pariatur eius. 
+          Veritatis modi provident explicabo nisi necessitatibus reprehenderit
+          fugit.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Magnam iure similique ratione dolorum odit illo blanditiis! 
+          Repellat ullam nisi, sint amet assumenda quibusdam numquam ipsam 
+          cum totam nostrum doloremque.
+        </p>
+      </div>
+      <!-- <div class="column__left-about">
+        <img class="image__about" src="./images/casual.png" alt="">
+      </div>
+      <div class="column__right-about">
+        
+      </div> -->
+    </section>
+
+    <section class="container__projects section" data-name="Projects" id="projects">
+      <div class="project">
+        <img class="project__santahat" src="./images/santa-hat.png" alt="">
+        <div class="project__tecnologies">
+          <img src="./images/icons/html.svg" alt="">
+          <img src="./images/icons/css.svg" alt="">
+          <img src="./images/icons/js.svg" alt="">
+        </div>
+        <img class="project__image" src="./images/project_empty.png" alt="">
+        <h2 class="project__name">Name Project</h2>
+        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!, 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!
+        </p>
+        <a class="project__deploy" href="#"><img src="./images/icon-link.png" alt=""></a>
+        <a class="project__repository" href="#"><img src="./images/icon-github.png" alt=""></a>
+      </div>
+      <div class="project">
+        <img class="project__santahat" src="./images/santa-hat.png" alt="">
+        <div class="project__tecnologies">
+          <img src="./images/icons/html.svg" alt="">
+          <img src="./images/icons/css.svg" alt="">
+          <img src="./images/icons/js.svg" alt="">
+        </div>
+        <img class="project__image" src="./images/project_empty.png" alt="">
+        <h2 class="project__name">Name Project</h2>
+        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!, 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!
+        </p>
+        <a class="project__deploy" href="#"><img src="./images/icon-link.png" alt=""></a>
+        <a class="project__repository" href="#"><img src="./images/icon-github.png" alt=""></a>
+      </div>
+      <div class="project">
+        <img class="project__santahat" src="./images/santa-hat.png" alt="">
+        <div class="project__tecnologies">
+          <img src="./images/icons/html.svg" alt="">
+          <img src="./images/icons/css.svg" alt="">
+          <img src="./images/icons/js.svg" alt="">
+        </div>
+        <img class="project__image" src="./images/project_empty.png" alt="">
+        <h2 class="project__name">Name Project</h2>
+        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!, 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!
+        </p>
+        <a class="project__deploy" href="#"><img src="./images/icon-link.png" alt="icon-link"></a>
+        <a class="project__repository" href="#"><img src="./images/icon-github.png" alt="icon-github"></a>
+      </div>
+    </section>
+
+    <section class="container__skills section" data-name="Skills" id="skills">
+      <div class="skill__column-left">
+        <img class="skills__icon fadeSlideFrom" src="./images/icons/css.svg" alt="">
+        <img class="skills__icon fadeSlideFrom2" src="./images/icons/html.svg" alt="">
+        <img class="skills__icon fadeSlideFrom" src="./images/icons/js.svg" alt="">
+        <img class="skills__icon fadeSlideFrom2" src="./images/icons/wp.png" alt="">
+      </div>
+      <div class="skill__column-center">
+        <img class="skills__background" src="./images/working.png" alt="">
+      </div>
+      <div class="skill__column-right">
+        <img class="skills__icon" src="./images/icons/node.svg" alt="">
+        <img class="skills__icon" src="./images/icons/php.svg" alt="">
+        <img class="skills__icon" src="./images/icons/react.svg" alt="">
+        <img class="skills__icon" src="./images/icons/vue.svg" alt="">
+      </div>
+    </section>
+
+    <section class="container__contact section" data-name="Contact" id="contact">
+      <div class="contact__column__left">
+        <div class="contact__social-media">
+          <h1 class="hero__title">Contact</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ad saepe quas possimus quo facilis ipsum dicta dignissimos aut explicabo!</p>
+          <div class="social__media">
+            <a class="project__deploy" href="#"><img src="./images/icons/linkedin.svg" alt="icon-link"></a>
+            <a class="project__deploy" href="#"><img src="./images/icons/github.svg" alt="icon-link"></a>
+            <a class="project__deploy" href="#"><img src="./images/icons/instagram.svg" alt="icon-link"></a>
+            <a class="project__deploy" href="#"><img src="./images/icons/gmail.svg" alt="icon-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact__column__right">
+        <img class="contact__image" src="./images/backbusiness.png" alt="">
+      </div>
+    </section>
+    <div class="name__section"></div>
+  </main>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script> -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
