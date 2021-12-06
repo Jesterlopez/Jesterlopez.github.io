@@ -9,7 +9,7 @@ const $$ = (element) => {
 
 const options = {
   root: null,
-  rootMargin: '100px 0px 100px 0px',
+  rootMargin: '100px 0px 0px 0px',
   threshold: 0.5
 }
 
@@ -50,9 +50,13 @@ menuToggle.addEventListener('click', () => {
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 const toggleDarKMode = $('.toggle__dark-mode')
 
-darkModeMediaQuery.matches
-  ? toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/night2.gif')
-  : toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/day.gif')
+if (darkModeMediaQuery.matches) {
+  document.body.classList.add('dark')
+  toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/night2.gif')
+} else {
+  document.body.classList.remove('dark')
+  toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/day.gif')
+}
 
 toggleDarKMode.addEventListener('click', () => {
   if (document.body.classList.contains('dark')) {
@@ -63,17 +67,6 @@ toggleDarKMode.addEventListener('click', () => {
     toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/night2.gif')
   }
 })
-
-
-
-// darkModeMediaQuery.addListener((e) => {
-//   const darkModeOn = e.matches;
-//   toggleDarKMode.addEventListener('click', () => {
-//     console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
-//   })
-// });
-
-
 
 // GSAP 
 

@@ -5,6 +5,7 @@
   --background-color-dark: #292A2D;
   --color-secundary: #EC4A52;
   --color-white: #fff;
+  --color-white2: #f4f1ed;
 }
 
 * {
@@ -12,6 +13,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  transition: background .3s ease-in-out, color ease-in-out;
 }
 
 html {
@@ -26,10 +28,6 @@ body {
 body .title-home a{
   color: var(--text-color);
   text-decoration: none;
-}
-
-body, header {
-  transition: .3s background ease-in-out;
 }
 
 /* menu navigation  */
@@ -157,7 +155,8 @@ main {
 }
 
 .image__home {
-  width: 65%;
+  width: 440px;
+  height: 460px;
 }
 
 .circle__background {
@@ -422,6 +421,7 @@ main {
 @media screen and (max-width: 1020px) {
   .image__home {
     width: 460px;
+    height: 460px;
     transform: translateX(50px);
   }
 
@@ -472,14 +472,12 @@ main {
 
 @media screen and (max-width: 768px) {
   .toggle__menu {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    /* position: fixed; */
     top: 15px;
     right: 15px;
     border: none;
-    /* background: var(--background-color); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -561,7 +559,8 @@ main {
   }
 
   .column__right .image__home {
-    width: 100%;
+    width: 300px;
+    height: 310px;
     transform: translateX(30px);
   }
 
@@ -582,9 +581,9 @@ main {
   }
 
   .project__santahat {
-    width: 100px;
-    top: -50px;
-    right: -40px;
+    width: 70px;
+    top: -39px;
+    right: -29px;
   }
 
   .container__skills {
@@ -663,11 +662,11 @@ main {
   }
 
   .dark .skills__icon {
-    background:#f4f1ed;
+    background: var(--color-white2);
   }
 
   .dark .project {
-    background:#f4f1ed;
+    background:var(--color-white2);
     color: var(--text-color);
   }
 
@@ -685,12 +684,42 @@ main {
 }
 
 @media (prefers-color-scheme: light) {
-  body { 
-    background: var(--background-color); 
-    color: var(--text-color); 
+  body.dark { 
+    background: var(--background-color-dark); 
+    color: var(--text-color-dark); 
   }
 
-  .title-home a{
+  .dark header {
+   background: var(--background-color-dark); 
     color: var(--text-color);
+  }
+
+  .dark .menu__item a{
+    color: var(--text-color-dark); 
+  }
+
+  .dark .name__section {
+    color: #ffffff21;
+  }
+
+  .dark .skills__icon {
+    background: var(--color-white2);
+  }
+
+  .dark .project {
+    background:var(--color-white2);
+    color: var(--text-color);
+  }
+
+  .dark .title-home a{
+    color: var(--text-color-dark);
+  }
+
+  .dark .toggle__menu {
+    background: var(--background-color);
+  }
+
+ .dark .toggle__menu svg path{
+    stroke: var(--text-color);
   }
 }
