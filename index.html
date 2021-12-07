@@ -4,23 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JestDev</title>
+  <title>JestDev - Frontend Developer</title>
+  <meta name="description" content="Hi 👋, I'm Jester López Nicaraguan Frontend Developer, wanting to improve every day in what I already know and learning new technologies.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link defer href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./images/icon-apple.png">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
-      <h2 class="title-home">
-        <a href="#home">JestDev</a>
+      <div class="title-home">
+        <a href="#home" class="menu__logo">JestDev</a>
         <button class="toggle__menu" id="toggle__menu">
           <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">
             <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="3" d="M50 25L0 25M50 10L0 10M0 40L50 40"/>
           </svg>
         </button>
-      </h2>
+      </div>
       <ul class="menu__list">
         <li class="menu__item"><a href="#about-me">About Me</a></li>
         <li class="menu__item"><a href="#projects">Projects</a></li>
@@ -36,11 +38,13 @@
   <main>
     <section class="container__home section" data-name="Home" id="home">
       <div class="column__left">
-       <h1 class="hero__title">Hi! Here you will know me a little better</h1>
-          <p class="content__welcome">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vitae excepturi odit et, aperiam ex culpa deserunt ipsum soluta dolore?</p>
+       <h1 class="hero__title"><strong>Hi!👋, <br></strong> Here you will know me a little better</h1>
+          <p class="content__welcome">
+            Do you have a new challenge for me? Contact me and we chat a little!
+          </p>
           <div class="buttons__home">
-            <a class="button" href="#">Contact</a>
-            <a class="button" href="#">CV</a>
+            <a class="button" href="#contact">Contact</a>
+            <a class="button" href="/cv.pdf">CV</a>
           </div>
       </div>
       <div class="column__right">
@@ -51,18 +55,13 @@
 
     <section class="container__about section" data-name="About Me" id="about-me">
       <div class="about__content">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          Magnam iure similique ratione dolorum odit illo blanditiis! 
-          Repellat ullam nisi, sint amet assumenda quibusdam numquam ipsam 
-          cum totam nostrum doloremque illum voluptatem nihil omnis dolorum 
-          architecto animi ab temporibus nulla officia pariatur eius. 
-          Veritatis modi provident explicabo nisi necessitatibus reprehenderit
-          fugit.
+        <p>My name is Jester Lopez Nicaragüense, 22 years old, 
+          graduated from the Systems Engineering career, 
+          I consider myself to be a person capable of achieving what is proposed, 
+          innovative, dreamy and wanting to improve every day.
         </p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          Magnam iure similique ratione dolorum odit illo blanditiis! 
-          Repellat ullam nisi, sint amet assumenda quibusdam numquam ipsam 
-          cum totam nostrum doloremque.
+        <p>I always learn from my mistakes to avoid making them in the future.
+          Some of my hobbies are: producing music, exercising, playing video games, and riding a motorcycle. 
         </p>
       </div>
     </section>
@@ -74,14 +73,13 @@
           <img loading="lazy" width="32"  height="32" src="./images/icons/html.svg" alt="html">
           <img loading="lazy" width="32"  height="32" src="./images/icons/css.svg" alt="css">
           <img loading="lazy" width="32"  height="32" src="./images/icons/js.svg" alt="js">
+          <img loading="lazy" width="32"  height="32" src="./images/icons/react.svg" alt="React js">
         </div>
-        <img loading="lazy" class="project__image" src="./images/project_empty.PNG" alt="project empty">
-        <h2 class="project__name">Name Project</h2>
-        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!, 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!
-        </p>
-        <a class="project__deploy" href="#"><img loading="lazy" width="24" height="24" src="./images/icon-link.png" alt="icon link"></a>
-        <a class="project__repository" href="#"><img loading="lazy" width="24" height="24" src="./images/icon-github.png" alt="github icon"></a>
+        <img loading="lazy" class="project__image" src="./images/pokedex.png" alt="project empty">
+        <h3 class="project__name">Pokedex</h3>
+        <p class="project__description">Project developed with react js is a generator of pokemon, using the PokeApi API</p>
+        <a class="project__deploy" target="_blank" href="https://jesterlopez.github.io/pokedex-react"><img loading="lazy" width="24" height="24" src="./images/icon-link.png" alt="icon link"></a>
+        <a class="project__repository" target="_blank" href="https://github.com/Jesterlopez/pokedex-react"><img loading="lazy" width="24" height="24" src="./images/icon-github.png" alt="github icon"></a>
       </div>
 
       <div class="project">
@@ -91,13 +89,11 @@
           <img loading="lazy" width="32"  height="32" src="./images/icons/css.svg" alt="css">
           <img loading="lazy" width="32"  height="32" src="./images/icons/js.svg" alt="js">
         </div>
-        <img loading="lazy" class="project__image" src="./images/project_empty.PNG" alt="project empty">
-        <h2 class="project__name">Name Project</h2>
-        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!, 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!
-        </p>
-        <a class="project__deploy" href="#"><img loading="lazy" width="24" height="24" src="./images/icon-link.png" alt="icon link"></a>
-        <a class="project__repository" href="#"><img loading="lazy" width="24" height="24" src="./images/icon-github.png" alt="github icon"></a>
+        <img loading="lazy" class="project__image" src="./images/ip-tracker.png" alt="project empty">
+        <h3 class="project__name">IP-Tracker</h3>
+        <p class="project__description">Mentor Frontend Challenge, which consisted of using two separate APIs and creating an IP address tracking application together.</p>
+        <a class="project__deploy" target="_blank" href="https://jesterlopez.github.io/IP-Tracker"><img loading="lazy" width="24" height="24" src="./images/icon-link.png" alt="icon link"></a>
+        <a class="project__repository" target="_blank" href="https://github.com/Jesterlopez/IP-Tracker/"><img loading="lazy" width="24" height="24" src="./images/icon-github.png" alt="github icon"></a>
       </div>
 
       <div class="project">
@@ -107,13 +103,12 @@
           <img loading="lazy" width="32"  height="32" src="./images/icons/css.svg" alt="css">
           <img loading="lazy" width="32"  height="32" src="./images/icons/js.svg" alt="js">
         </div>
-        <img loading="lazy" class="project__image" src="./images/project_empty.PNG" alt="project empty">
-        <h2 class="project__name">Name Project</h2>
-        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!, 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officia!
-        </p>
-        <a class="project__deploy" href="#"><img loading="lazy" width="24" height="24" src="./images/icon-link.png" alt="icon link"></a>
-        <a class="project__repository" href="#"><img loading="lazy" width="24" height="24" src="./images/icon-github.png" alt="github icon"></a>
+        <img loading="lazy" class="project__image" src="./images/codi-link.png" alt="project empty">
+        <h3 class="project__name">Codi.Link</h3>
+        <p class="project__description">
+          I collaborated on this project, a live editor for HTML, CSS and JS. It allows you to edit your code in real time and see the result instantly.</p>
+        <a class="project__deploy" target="_blank" href="https://codi.link/"><img loading="lazy" width="24" height="24" src="./images/icon-link.png" alt="icon link"></a>
+        <a class="project__repository" target="_blank" href="https://github.com/midudev/codi.link"><img loading="lazy" width="24" height="24" src="./images/icon-github.png" alt="github icon"></a>
       </div>
 
     </section>
@@ -139,18 +134,17 @@
     <section class="container__contact section" data-name="Contact" id="contact">
       <div class="contact__column__left">
         <div class="contact__social-media">
-          <h1 class="hero__title">Contact</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ad saepe quas possimus quo facilis ipsum dicta dignissimos aut explicabo!</p>
+          <h3 class="hero__title">Talk to me, I will answer as soon as possible!</h3>
           <div class="social__media">
-            <a class="project__deploy" href="#"><img loading="lazy" src="./images/icons/linkedin.svg" alt="icon-link"></a>
-            <a class="project__deploy" href="#"><img loading="lazy" src="./images/icons/github.svg" alt="icon-github"></a>
-            <a class="project__deploy" href="#"><img loading="lazy" src="./images/icons/instagram.svg" alt="icon-instagram"></a>
-            <a class="project__deploy" href="#"><img loading="lazy" src="./images/icons/gmail.svg" alt="icon-gmail"></a>
+            <a class="project__deploy" target="_blank" href="https://www.linkedin.com/in/jester-l%C3%B3pez-8b7886209/"><img loading="lazy" src="./images/icons/linkedin.svg" alt="icon-link"></a>
+            <a class="project__deploy" target="_blank" href="https://github.com/Jesterlopez"><img loading="lazy" src="./images/icons/github.svg" alt="icon-github"></a>
+            <a class="project__deploy" target="_blank" href="https://www.instagram.com/jester_lopez/"><img loading="lazy" src="./images/icons/instagram.svg" alt="icon-instagram"></a>
+            <a class="project__deploy" target="_blank" href="mailto:jesmark1999@gmail.com"><img loading="lazy" src="./images/icons/gmail.svg" alt="icon-gmail"></a>
           </div>
         </div>
       </div>
       <div class="contact__column__right">
-        <img loading="lazy" class="contact__image" width="300" height="300" src="./images/backbusiness.png" alt="business and social media">
+        <img loading="lazy" class="contact__image" width="300" height="300" src="./images/contact-image.png" alt="business and social media">
       </div>
     </section>
     <div class="name__section"></div>

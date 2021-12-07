@@ -30,6 +30,11 @@ body .title-home a{
   text-decoration: none;
 }
 
+.menu__logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
 /* menu navigation  */
 header{
   width: 100%;
@@ -37,7 +42,6 @@ header{
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 50px;
-  /* box-shadow: 4px 1px 8px 0px #0000001c; */
   position: fixed;
   z-index: 10;
   background: #fff;
@@ -126,7 +130,6 @@ main {
 .content__welcome {
   width: 80%;
   margin-bottom: 20px;
-  font-size: 14px;
 }
 
 .buttons__home{
@@ -236,6 +239,8 @@ main {
 
 .project__image {
   width: 100%;
+  height: 157px;
+  object-fit: cover;
 }
 
 .project__name {
@@ -246,6 +251,7 @@ main {
 .project__description {
   font-size: .9rem;
   margin: 10px 0;
+  min-height: 84px;
 }
 
 .project__deploy, .project__repository {
@@ -290,7 +296,7 @@ main {
 }
 
 .skills__background {
-  width: 550px;
+  width: 440px;
   transform: translateX(50px);
 }
 
@@ -320,13 +326,6 @@ main {
   margin-left: -20px;
 }
 
-/* .skill__column-center {
-  
-}
-.skill__column-right {
-  
-} */
-
 .container__contact { 
   display: flex;
   flex-wrap: wrap;
@@ -349,7 +348,7 @@ main {
 .social__media {
   width: 100%;
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .contact__column__right {
@@ -357,7 +356,8 @@ main {
 }
 
 .contact__image {
-  width: 50%;
+  width: auto;
+  height: 100%;
 }
 
 .contact__boy, .contact__phone {
@@ -376,47 +376,6 @@ main {
   left: 5%;
   z-index: -1;
 }
-
-/* .section {
-  min-height: 550px;
-} */
-
-/* .cube {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  bottom: 0%;
-  right: 20%;
-  transform-style: preserve-3d;
-  transform: rotateX(257deg) rotateY(0deg) rotateZ(246deg);
-  box-shadow: 0px 2px 11px 0px #000000d4;
-}
-
-.side {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.top {
-  transform: translateZ(-60px);
-  background: #EC4A52;
-}
-
-.front {
-  transform: rotateX(90deg);
-  transform-origin: bottom;
-  background: #EC4A52;
-}
-
-.left {
-  width: 60px;
-  transform: translateZ(-60px) rotateY(90deg);
-  transform-origin: right;
-  background: #EC4A52;
-} */
 
 @media screen and (max-width: 1020px) {
   .image__home {
@@ -631,9 +590,6 @@ main {
     width: 100%;
   }
 
-  /* .name__section {
-    display: none;
-  } */
 }
 
 
