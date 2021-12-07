@@ -45,6 +45,18 @@ menuToggle.addEventListener('click', () => {
   }
 })
 
+// menu links 
+const links = $$('.menu__item a')
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    if (document.body.classList.contains('open')) {
+      document.body.classList.remove('open')
+    }
+  })
+})
+
+
 // DARK MODE 
 
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -67,66 +79,3 @@ toggleDarKMode.addEventListener('click', () => {
     toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/night2.gif')
   }
 })
-
-// GSAP 
-
-// const gsapEffects = [
-//   {
-//     id: "fadeSlideFrom",
-//     animate: 'from',
-//     props: { opacity: 0.50, y: 150, yoyo: true, repeat: -1 }
-//   },
-//   {
-//     id: "fadeSlideFrom2",
-//     animate: 'from',
-//     props: { opacity: 0.50, y: 150, yoyo: true, repeat: -1 }
-//   }
-// ];
-
-// gsapEffects.forEach(effect => {
-//   gsap.registerEffect({
-//     name: effect.id,
-//     defaults: { duration: 1 },
-//     extendTimeline: true,
-//     effect(targets, config) {
-//       if (effect.animate === 'from') {
-//         return gsap.from(targets, { ...effect.props, ...config })
-//       }
-//       else if (effect.animate === 'fromTo') {
-//         return gsap.fromTo(targets, { ...effect.props, ...config }, { ...effect.props2 })
-//       }
-//       else {
-//         return gsap.to(targets, { ...effect.props, ...config })
-//       }
-//     }
-//   });
-// });
-
-// let tl = gsap.timeline();
-// tl.fadeSlideFrom(".fadeSlideFrom", 0)
-//   .fadeSlideFrom(".fadeSlideFrom2")
-
-// const heroText = $('.circle__background');
-// gsap.registerPlugin(ScrollTrigger)
-
-// const tl = gsap.timeline({
-//   defaults: { ease: "none", transformOrigin: "50% 50%" },
-//   scrollTrigger: {
-//     trigger: ".hero",
-//     start: "top top",
-//     end: "bottom top",
-//     scrub: true,
-//     markers: true
-//   }
-// })
-
-// tl.to(
-//   heroText,
-//   {
-//     y: -heroText.offsetHeight * heroText.dataset.depth,
-//     autoAlpha: 0,
-//     scale: 2,
-//     duration: 0.2
-//   },
-//   0
-// )
