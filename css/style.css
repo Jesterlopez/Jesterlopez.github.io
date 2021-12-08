@@ -160,6 +160,7 @@ main {
 .image__home {
   width: 440px;
   height: 460px;
+  transform: translateX(40px);
 }
 
 .circle__background {
@@ -168,8 +169,10 @@ main {
   border-radius: 50%;
   background: var(--color-secundary);
   position: absolute;
-  top: -5%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+    /* filter: blur(90px); */
   z-index: -1;
 }
 
@@ -335,7 +338,6 @@ main {
   width: 50%;
   display: flex;
   align-items: center;
-  /* padding: 20px; */
   position: relative;
 }
 
@@ -452,6 +454,10 @@ main {
     transition: all .3s ease;
   }
 
+  body.open {
+    overflow: hidden;
+  }
+
   body.open svg path {
     d: path("M50 30L 50 30 M50 50 L 0 0 M0 50 L 50 0");
   }
@@ -463,12 +469,12 @@ main {
   }
 
   .open header {
-    height: calc(335px + 70px);
+    height: 100vh;
+    display: block;
   }
 
-  header .menu__item {
-    padding: 20px;
-    width: 100%;
+  header .title-home {
+    height: 70px;
   }
 
   header .title-home {
@@ -477,6 +483,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  
+  header .menu__item { 
+    padding: 30px 20px;
+    width: 100%;
   }
 
   .menu__item.toggle {
@@ -491,6 +502,8 @@ main {
   .menu__list {
     transition: .3s transform ease;
     transform: translateX(100%);
+    position: absolute;
+    top: 70px;
   }
 
   .open .menu__list {
@@ -524,7 +537,7 @@ main {
   }
 
   .circle__background {
-    height: 94%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 50%;

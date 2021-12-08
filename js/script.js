@@ -9,8 +9,8 @@ const $$ = (element) => {
 
 const options = {
   root: null,
-  rootMargin: '100px 0px 0px 0px',
-  threshold: 0.5
+  rootMargin: '0px',
+  threshold: 0.75
 }
 
 
@@ -62,13 +62,21 @@ links.forEach(link => {
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 const toggleDarKMode = $('.toggle__dark-mode')
 
-if (darkModeMediaQuery.matches) {
-  document.body.classList.add('dark')
-  toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/night2.gif')
-} else {
-  document.body.classList.remove('dark')
-  toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/day.gif')
+const applyDarkMode = () => {
+  if (darkModeMediaQuery.matches) {
+    document.body.classList.add('dark')
+    toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/night2.gif')
+  } else {
+    document.body.classList.remove('dark')
+    toggleDarKMode.firstElementChild.setAttribute('src', './images/icons/day.gif')
+  }
 }
+
+applyDarkMode()
+
+darkModeMediaQuery.addEventListener('change', () => {
+  applyDarkMode()
+})
 
 toggleDarKMode.addEventListener('click', () => {
   if (document.body.classList.contains('dark')) {
